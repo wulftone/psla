@@ -14,7 +14,10 @@
     =javascript_include_tag  "all"
 
   %body{class: page_classes}
-    %nav
-      =link_to 'about', 'about'
-    %content
+
+    =partial :nav
+
+    %article
       =yield
+
+    =partial :footer
