@@ -12,7 +12,6 @@ html
       = data.page.title || "Pediatric Speech and Language Associates"
 
     = stylesheet_link_tag "normalize", "all"
-    = javascript_include_tag  "all"
 
   body.page_classes
 
@@ -22,3 +21,5 @@ html
       = yield
 
     = partial :footer
+
+    = javascript_include_tag  "all"
