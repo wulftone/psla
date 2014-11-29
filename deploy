@@ -1,0 +1,10 @@
+#!/bin/sh
+
+bundle exec middleman build --verbose
+gco --orphan gh-pages
+git rm -rf .
+mv build/* ./
+rm -r build
+git add --all
+git commit --all -m 'website'
+git push -f
