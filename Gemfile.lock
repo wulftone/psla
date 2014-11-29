@@ -99,7 +99,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (~> 3.1.0)
-  middleman-livereload (> 3)
+  middleman
+  middleman-livereload
   rb-inotify
   slim
